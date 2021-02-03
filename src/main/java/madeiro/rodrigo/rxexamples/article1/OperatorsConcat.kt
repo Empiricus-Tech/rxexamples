@@ -8,8 +8,8 @@ class OperatorsConcat {
         @JvmStatic
         fun main(args: Array<String>) {
 
-            val a = Observable.range(1, 100)
-            val b = Observable.range(101, 100)
+            val a = Observable.range(1, 5)
+            val b = Observable.range(6, 5)
 
             val c = Observable.concat(a, b)
 

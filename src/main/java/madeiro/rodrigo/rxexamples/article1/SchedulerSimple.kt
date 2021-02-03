@@ -11,8 +11,8 @@ class SchedulerSimple {
         @JvmStatic
         fun main(args: Array<String>) {
 
-            val a = Observable.range(1, 100).subscribeOn(Schedulers.newThread()).observeOn(Schedulers.newThread())
-            val b = Observable.range(101, 100).subscribeOn(Schedulers.newThread()).observeOn(Schedulers.newThread())
+            val a = Observable.range(1, 5).subscribeOn(Schedulers.newThread()).observeOn(Schedulers.newThread())
+            val b = Observable.range(6, 5).subscribeOn(Schedulers.newThread()).observeOn(Schedulers.newThread())
 
 
             val observer = object: Observer<Int>{
